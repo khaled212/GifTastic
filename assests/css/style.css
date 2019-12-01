@@ -38,10 +38,10 @@ hr {
     margin: 15px 0;
 }
 
-gifCaption {
+#gifCaption {
     white-space: pre;
 }
-gifsDisplay {
+.gifsDisplay {
 	float: left;
 	margin: 15px;
 }
