@@ -1,0 +1,47 @@
+body {
+    background-image: url("../images/709674_comic-wallpapers_1920x1080_h.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000000;   
+    font-family: 'Impact', Helvetica, sans-serif;
+    color: red;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover 
+{
+     color:rgb(165, 0, 198); 
+     text-decoration:none; 
+     cursor:pointer;  
+}
+
+button {
+	margin: 15px;
+}
+
+footer {
+    height: auto;
+    color: red;
+    font-size: 12px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+hr {
+    color: red;
+    border-style: solid none;
+    border-width: 1px 0;
+    margin: 15px 0;
+}
+
+gifCaption {
+    white-space: pre;
+}
+gifsDisplay {
+	float: left;
+	margin: 15px;
+}

@@ -1,31 +1,68 @@
 <!DOCTYPE html>
-<html lang="en-us">
-	<head>
-		<meta charset="UTF-8">
-		<title>Cartoon GIF Generator</title>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script type="text/javascript" src="assets/javascript/giphy-generator.js"></script>
-	</head>
-	<body>
-		<div class = "row">
-			<h1>Cartoon Shows</h1>
-			<div id = "button-container" class = "dotted-border">
-			</div>
-		</div>
-		<div class = "row">
-			<div id = "gif-container" class = "col-xs-8 comic-sans-font">
-			</div>
-			<div class = "col-xs-1">
-			</div>
-			<div class = "col-xs-3">
-				<form class="comic-sans-font">
-					Add buttons for your favorite cartoons:<br>
-					<input type = "text" name = "cartoon-show" id = "cartoon-show" class="comic-sans-font">
-					<input type = "submit" value = "Submit" class = "btn" id = "submit">
-				</form>
-			</div>
-		</div>
-	</body>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Comic Book Heroes GifTastic</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">    
+        <link rel="icon" href="assets/images/pow.jpg" type="image/jpg" sizes="20x20"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+
+<body>
+  <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="header text-center">Comic Book Hero Gif Generator</h1>
+        </div>
+    </div>
+  </div>
+  <div class="container">  
+    <div class="form-group col-md-12">
+      <div id="buttons"></div>
+    </div>  
+  </div>   
+  <hr>
+  <div class="container"> 
+    <div class="form-group col-md-4">
+      <label for="addHero" id="hLabel">Add a New Hero</label>
+      <input type="text" class="form-control" id="addHero">
+      <button type="submit" class="btn btn-outline-danger" id="newHeroes">Submit</button>
+    </div>
+    <div class="row col-md-9">
+      <div id="gifs-appear-here"></div>
+    </div>  
+  </div>
+  <div class="container">
+    <div class="form-group col-md-12">
+        <div id="moreButton"></div>
+    </div> 
+  </div>
+  <div class="modal fade" id="dupModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      >
+        <div class="modal-header">
+          <h4 class="modal-title">Friendly Reminder</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          This hero has already been added
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+</div>
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="assets/javascript/GifTastic.js"></script>
+
+</body>
+</html>
