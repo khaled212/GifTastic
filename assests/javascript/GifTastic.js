@@ -57,8 +57,8 @@ $(document).ready(function () {
     });
 
     function getGifs(comicHero, offset) {
-        var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-            comicHero + "&api_key=I9OLrgjtcwjg6Rgz4T3FC03k9ib5WtSB&limit=10&offset=" + offset;
+        var queryURL = "https://api.giphy.com/v1/stickers/search?api_key=" +
+            comicHero + "uvYCpzXJli4IxRmah1bl8rHE93j6mtxg&q=&limit=25&offset=0&rating=R&lang=en" + offset;
         $.ajax({
             url: queryURL,
             method: "GET"
@@ -67,11 +67,11 @@ $(document).ready(function () {
             .then(function (response) {
                 var results = response.data;
                 for (var i = 0; i < results.length; i++) {
-                    if (results[i].rating !== "r" && results[i].rating !== "pg-13") {
+                    if (results[i].rating !== "R" && results[i].rating !== "R") {
                         var gifDiv = $("<div class='gifsDisplay'>");
                         var rating = results[i].rating;
                         var title = results[i].title;
-                        var p = $("<p id='gifCaption'>").text("Rating: " + rating + "    Title: " + title);
+                        var p = $("<p id='gifCaption'>").text("Rating: " + rating + "  Title: " + title);
                         var originalImage = results[i].images.original.url;
                         var p2 = $("<p><a href='" + originalImage + "' target='_blank'>See on Giphy</a></p>");
                         var heroImage = $("<img>");

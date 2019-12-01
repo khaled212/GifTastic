@@ -2,7 +2,7 @@ body {
     background-image: url("../images/709674_comic-wallpapers_1920x1080_h.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #000000;   
+    background-color: black;   
     font-family: 'Impact', Helvetica, sans-serif;
     color: red;
 }
