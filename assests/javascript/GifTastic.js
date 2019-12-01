@@ -20,7 +20,7 @@ $(document).ready(function () {
     });
 
     $("#moreButton").on("click", function () {
-        offset += 10;
+        offset += 0;
         getGifs(comicHero, offset);
     });
 
