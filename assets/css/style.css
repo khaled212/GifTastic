@@ -4,7 +4,7 @@ body {
     background-size: cover;
     background-color:hsla(0, 0%, 0%, 0.968);   
     font-family: 'Impact', Helvetica, sans-serif;
-    color: red;
+    color:white;
 }
 
 a {
@@ -14,13 +14,14 @@ a {
 
 a:hover 
 {
-     color:rgb(133, 1, 1); 
+     color:white; 
      text-decoration:none; 
      cursor:pointer;  
 }
 
 button {
-	margin: 15px;
+    margin: 15px;
+    
 }
 
 footer {
@@ -32,7 +33,7 @@ footer {
 }
 
 hr {
-    color: red;
+    color:white;
     border-style: solid none;
     border-width: 1px 0;
     margin: 15px 0;
