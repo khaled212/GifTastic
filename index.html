@@ -1,56 +1,57 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Comic Book Heroes GifTastic</title>
-        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">    
-        <link rel="icon" href="assets/images/pow.jpg" type="image/jpg" sizes="20x20"> 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    </head>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Comic Book Heroes GifTastic</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="icon" href="assets/images/pow.jpg" type="image/jpg" sizes="20x20">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
 
 <body>
   <div class="container">
     <div class="row">
-        <div class="col-md-12">
-            <h1 class="header text-center">Comic Book Hero GifTastic</h1>
-        </div>
+      <div class="col-md-12">
+        <h1 class="header text-center">Comic Book Hero GifTastic</h1>
+      </div>
     </div>
-  </div>
-  <div class="container">  
-    <div class="form-group col-md-12">
-      <div id="buttons"></div>
-    </div>  
-  </div>   
-  <hr>
-  <div class="container"> 
-    <div class="form-group col-md-4">
-      <label for="addHero" id="hLabel">Add a New Hero</label>
-      <input type="text" class="form-control" id="addHero">
-      <button type="submit" class="btn btn-outline-danger" id="newHeroes">Submit</button>
-    </div>
-    <div class="row col-md-9">
-      <div id="gifs-appear-here"></div>
-    </div>  
   </div>
   <div class="container">
     <div class="form-group col-md-12">
-        <div id="moreButton"></div>
-    </div> 
+      <div id="buttons"></div>
+    </div>
+  </div>
+  <hr>
+  <div class="container">
+    <div class="form-group col-md-4">
+      <label for="addHero" id="hLabel">Add a New Hero</label>
+      <input type="text" class="form-control" id="addHero">
+      <button type="submit" class="btn btn-outline-danger" id="moreButton">Submit</button>
+    </div>
+    <div class="row col-md-9">
+      <div id="gifs-appear-here"></div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="form-group col-md-12">
+      <div id="moreButton"></div>
+    </div>
   </div>
   <div class="fixed-bottom text-center">
     <footer>
-        <p>&copy; 2019 Khaled Hammouda; Images from <a href="https://www.giphy.com">Giphy </a></p>
+      <p>&copy; 2019 Khaled Hammouda; Images from <a href="https://www.giphy.com">Giphy </a></p>
     </footer>
-</div>
+  </div>
   <div class="modal fade" id="dupModal">
     <div class="modal-dialog">
       <div class="modal-content">
-      >
+        >
         <div class="modal-header">
           <h4 class="modal-title">Friendly Reminder</h4>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -61,13 +62,14 @@
         <div class="modal-footer">
           <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
         </div>
-        
+
       </div>
     </div>
-</div>
+  </div>
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
   <script type="text/javascript" src="assets/javascript/GifTastic.js"></script>
 
 </body>
+
 </html>

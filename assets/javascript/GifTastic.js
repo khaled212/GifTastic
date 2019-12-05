@@ -20,6 +20,8 @@ $(document).ready(function () {
     });
 
     $("#moreButton").on("click", function () {
+        event.preventDefault();
+        console.log("IAMWORKING")
         offset += 0;
         getGifs(comicHero, offset);
     });
@@ -58,7 +60,7 @@ $(document).ready(function () {
 
     function getGifs(comicHero, offset) {
         var queryURL = "https://api.giphy.com/v1/stickers/search?api_key=" +
-            comicHero + "uvYCpzXJli4IxRmah1bl8rHE93j6mtxg&q=&limit=25&offset=0&rating=R&lang=en" + offset;
+            "uvYCpzXJli4IxRmah1bl8rHE93j6mtxg&q="+comicHero+"&limit=25&"+offset+"=0&rating=R&lang=en";
         $.ajax({
             url: queryURL,
             method: "GET"
