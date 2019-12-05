@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    var topics = ["Iron Man", "Deadpool", "Aquaman", "Spiderman", "Hellboy"]
+    var topics = ["Iron Man", "Deadpool", "Aquaman", "Spiderman", "Hellboy", "Superman"]
     var alreadyUsed = -1;
     var comicHero = "";
     var moreBtn = "";
@@ -19,9 +19,10 @@ $(document).ready(function () {
         $("#moreButton").append(moreBtn);
     });
 
-    $("#moreButton").on("click", function () {
+    $("#moreButton").submit(function (e) {
         event.preventDefault();
-        console.log("IAMWORKING")
+        comicHero = e.currentTarget[0].value;
+        console.log("comic hero in submit button", comicHero)
         offset += 0;
         getGifs(comicHero, offset);
     });
@@ -60,7 +61,7 @@ $(document).ready(function () {
 
     function getGifs(comicHero, offset) {
         var queryURL = "https://api.giphy.com/v1/stickers/search?api_key=" +
-            "uvYCpzXJli4IxRmah1bl8rHE93j6mtxg&q="+comicHero+"&limit=25&"+offset+"=0&rating=R&lang=en";
+            "uvYCpzXJli4IxRmah1bl8rHE93j6mtxg&q=" + comicHero + "&limit=25&" + offset + "=0&rating=R&lang=en";
         $.ajax({
             url: queryURL,
             method: "GET"
